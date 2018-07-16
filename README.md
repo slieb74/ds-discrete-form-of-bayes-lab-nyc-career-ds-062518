@@ -82,7 +82,7 @@ The file `food_and_drink_sales.csv` contains records of 100,000 different custom
 | muffin |   tea  |
 |  fruit |  water |
 
-For the remainder of this lab, we'll use python and Bayes' Theorem to answer the following question: Given
+For the remainder of this lab, we'll use python and Bayes' Theorem to answer the following question: _Given that a customer has ordered a coffee, what is the probability they will order a donut?_
 
 
 ```python
@@ -227,7 +227,16 @@ def get_conditional_probability(dataset, a, a_col_name, b, b_col_name):
     
     joint_prob = a_and_b_counter / float(len(dataset))
     return joint_prob / (b_counter / float(len(dataset)))
+
+get_conditional_probability(test_df, 'donut', 'Food Sales', 'tea', 'Drink Sales') # 0.5
 ```
+
+
+
+
+    0.5
+
+
 
 ### Calculating the Normalization Constant
 
