@@ -205,7 +205,7 @@ print(get_marginal_probability(test_df, 'donut', "Food Sales"))
 
 
     0.7
-    
+
 
 ### Calculating the Conditional Probability
 
@@ -274,7 +274,7 @@ get_norm_constant(test_df, 'donut', 'Food Sales', 'coffee', 'Drink Sales')
     P (!A): 0.30000000000000004
     P(B|A): 0.8571428571428572
     P(B|!A): 0.1428571428571428
-    
+
 
 
 
@@ -316,7 +316,7 @@ get_posterior(df, a, a_col_name, b, b_col_name)
     P (!A): 0.39842999999999995
     P(B|A): 0.5999301826886314
     P(B|!A): 0.4000698173113686
-    
+
 
 
 
